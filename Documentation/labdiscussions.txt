@@ -1,9 +1,0 @@
-1) 14/8/26
-create feasibility report
-train old models to showcase how newer ones are better
-
-2)21/8/26
-create docs of old models comparisson in tabular form
-read public available research papers
-basic frontend
-dataset visualize possibility?
