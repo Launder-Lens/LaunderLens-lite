@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" agent="Claude">
+  <diagram name="AML Use Case Scenarios" id="aml-usecase-scenarios-1">
+    <mxGraphModel dx="3213" dy="2110" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1690" pageHeight="2210" background="#141414" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title3" parent="1" style="text;html=1;align=left;valign=middle;fontSize=32;fontStyle=1;fontColor=#ffffff;" value="Use Case Scenarios" vertex="1">
+          <mxGeometry height="55" width="700" x="60" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="title3b" parent="1" style="text;html=1;align=left;valign=middle;fontSize=16;fontColor=#bbbbbb;" value="AML Transaction Monitoring &amp; Money Laundering Detection System" vertex="1">
+          <mxGeometry height="30" width="900" x="60" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="uc01" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232323;strokeColor=#b98a3d;strokeWidth=2;arcSize=3;" value="" vertex="1">
+          <mxGeometry height="640" width="760" x="60" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uc01_hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4d3b1f;strokeColor=#b98a3d;fontColor=#ffffff;fontSize=20;fontStyle=1;align=center;valign=middle;" value="UC-01: Upload Transaction Data" vertex="1">
+          <mxGeometry height="50" width="760" x="60" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uc01_body" parent="1" style="text;html=1;align=left;valign=top;fontSize=16;fontColor=#eaeaea;spacing=10;whiteSpace=wrap;overflow=hidden;lineHeight=1.35;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Primary Actor:&lt;/b&gt; Financial Institution (Bank)&lt;br&gt;&lt;br&gt;&lt;b style=&quot;&quot;&gt;Goal:&lt;/b&gt; Provide transaction data for AML analysis.&lt;br&gt;&lt;br&gt;&lt;b style=&quot;&quot;&gt;Precondition:&lt;/b&gt; Valid transaction file (e.g., CSV) is available.&lt;br&gt;&lt;br&gt;&lt;b style=&quot;&quot;&gt;Trigger:&lt;/b&gt; Bank uploads transaction data.&lt;br&gt;&lt;br&gt;&lt;b style=&quot;&quot;&gt;Main Flow:&lt;/b&gt; 1. User selects transaction file. 2. System validates file format and schema. 3. Data is securely uploaded to the system. 4. Confirmation message is displayed.&lt;br&gt;&lt;br&gt;&lt;b style=&quot;&quot;&gt;Alternative Flow:&lt;/b&gt; If the file is invalid, system shows an error and requests a corrected file.&lt;br&gt;&lt;br&gt;&lt;b style=&quot;&quot;&gt;Postcondition:&lt;/b&gt; Transaction data is stored and ready for preprocessing.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="568" width="728" x="76" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="uc02" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232323;strokeColor=#4c8a5a;strokeWidth=2;arcSize=3;" value="" vertex="1">
+          <mxGeometry height="640" width="760" x="870" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uc02_hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1f3a24;strokeColor=#4c8a5a;fontColor=#ffffff;fontSize=20;fontStyle=1;align=center;valign=middle;" value="UC-02: Detect Suspicious Transactions" vertex="1">
+          <mxGeometry height="50" width="760" x="870" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uc02_body" parent="1" style="text;html=1;align=left;valign=top;fontSize=16;fontColor=#eaeaea;spacing=10;whiteSpace=wrap;overflow=hidden;lineHeight=1.35;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;Primary Actor:&lt;/b&gt; System (triggered by data upload)&lt;br&gt;&lt;br&gt;&lt;b&gt;Goal:&lt;/b&gt; Identify potentially suspicious transactions using GNN.&lt;br&gt;&lt;br&gt;&lt;b&gt;Precondition:&lt;/b&gt; Transaction data is preprocessed and graph is constructed.&lt;br&gt;&lt;br&gt;&lt;b&gt;Trigger:&lt;/b&gt; Preprocessed data is available.&lt;br&gt;&lt;br&gt;&lt;b&gt;Main Flow:&lt;/b&gt; 1. Construct transaction graph (accounts as nodes, transactions as edges). 2. Apply trained GNN model. 3. Detect suspicious transactions. 4. Generate risk scores. 5. Store results for analyst review.&lt;br&gt;&lt;br&gt;&lt;b&gt;Alternative Flow:&lt;/b&gt; If the model fails or insufficient data is available, notify administrator.&lt;br&gt;&lt;br&gt;&lt;b&gt;Postcondition:&lt;/b&gt; Suspicious transactions and risk scores are generated.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="568" width="728" x="886" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="uc03" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232323;strokeColor=#8866ad;strokeWidth=2;arcSize=3;" value="" vertex="1">
+          <mxGeometry height="640" width="760" x="60" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="uc03_hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#3a2b4d;strokeColor=#8866ad;fontColor=#ffffff;fontSize=20;fontStyle=1;align=center;valign=middle;" value="UC-03: Investigate Suspicious Transaction" vertex="1">
+          <mxGeometry height="50" width="760" x="60" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="uc03_body" parent="1" style="text;html=1;align=left;valign=top;fontSize=16;fontColor=#eaeaea;spacing=10;whiteSpace=wrap;overflow=hidden;lineHeight=1.35;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;Primary Actor:&lt;/b&gt; AML Analyst (Investigator)&lt;br&gt;&lt;br&gt;&lt;b&gt;Goal:&lt;/b&gt; Investigate a flagged transaction in detail.&lt;br&gt;&lt;br&gt;&lt;b&gt;Precondition:&lt;/b&gt; Suspicious transactions are available in the system.&lt;br&gt;&lt;br&gt;&lt;b&gt;Trigger:&lt;/b&gt; Analyst selects a transaction from detection results.&lt;br&gt;&lt;br&gt;&lt;b&gt;Main Flow:&lt;/b&gt; 1. View transaction details. 2. View connected accounts and transaction network. 3. Analyze transaction flow and patterns. 4. Add notes and evidence. 5. Mark case as Suspicious or Legitimate.&lt;br&gt;&lt;br&gt;&lt;b&gt;Alternative Flow:&lt;/b&gt; If required information is missing, analyst can request additional data or escalate the case.&lt;br&gt;&lt;br&gt;&lt;b&gt;Postcondition:&lt;/b&gt; Case is updated with analyst decision and notes.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="568" width="728" x="76" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="uc04" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232323;strokeColor=#b98a3d;strokeWidth=2;arcSize=3;" value="" vertex="1">
+          <mxGeometry height="640" width="760" x="870" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="uc04_hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4d3b1f;strokeColor=#b98a3d;fontColor=#ffffff;fontSize=20;fontStyle=1;align=center;valign=middle;" value="UC-04: View Account / Transaction Network" vertex="1">
+          <mxGeometry height="50" width="760" x="870" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="uc04_body" parent="1" style="text;html=1;align=left;valign=top;fontSize=16;fontColor=#eaeaea;spacing=10;whiteSpace=wrap;overflow=hidden;lineHeight=1.35;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;Primary Actor:&lt;/b&gt; AML Analyst (Investigator)&lt;br&gt;&lt;br&gt;&lt;b&gt;Goal:&lt;/b&gt; Visualize the network of accounts and transactions related to a suspicious transaction.&lt;br&gt;&lt;br&gt;&lt;b&gt;Precondition:&lt;/b&gt; A suspicious transaction or account is selected.&lt;br&gt;&lt;br&gt;&lt;b&gt;Trigger:&lt;/b&gt; Analyst requests network visualization.&lt;br&gt;&lt;br&gt;&lt;b&gt;Main Flow:&lt;/b&gt; 1. System retrieves related accounts and transactions. 2. Display interactive graph (e.g., using Gephi or web UI). 3. Highlight suspicious accounts/transactions. 4. Allow analyst to explore connected nodes.&lt;br&gt;&lt;br&gt;&lt;b&gt;Alternative Flow:&lt;/b&gt; If the network is too large, system shows a filtered view.&lt;br&gt;&lt;br&gt;&lt;b&gt;Postcondition:&lt;/b&gt; Analyst gains insights into transaction patterns.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="568" width="728" x="886" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="uc05" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232323;strokeColor=#4c8a5a;strokeWidth=2;arcSize=3;" value="" vertex="1">
+          <mxGeometry height="640" width="760" x="60" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="uc05_hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1f3a24;strokeColor=#4c8a5a;fontColor=#ffffff;fontSize=20;fontStyle=1;align=center;valign=middle;" value="UC-05: Generate AML Report" vertex="1">
+          <mxGeometry height="50" width="760" x="60" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="uc05_body" parent="1" style="text;html=1;align=left;valign=top;fontSize=16;fontColor=#eaeaea;spacing=10;whiteSpace=wrap;overflow=hidden;lineHeight=1.35;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;Primary Actor:&lt;/b&gt; Financial Institution / AML Analyst&lt;br&gt;&lt;br&gt;&lt;b&gt;Goal:&lt;/b&gt; Generate a report summarizing suspicious transactions and investigation outcomes.&lt;br&gt;&lt;br&gt;&lt;b&gt;Precondition:&lt;/b&gt; Detection results and analyst feedback are available.&lt;br&gt;&lt;br&gt;&lt;b&gt;Trigger:&lt;/b&gt; User requests AML report.&lt;br&gt;&lt;br&gt;&lt;b&gt;Main Flow:&lt;/b&gt; 1. Select report criteria (time period, risk threshold, etc.). 2. System compiles detection and investigation data. 3. Generate and display/download report (PDF/CSV).&lt;br&gt;&lt;br&gt;&lt;b&gt;Alternative Flow:&lt;/b&gt; If no data is available for the selected period, notify the user.&lt;br&gt;&lt;br&gt;&lt;b&gt;Postcondition:&lt;/b&gt; AML report is generated.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="568" width="728" x="76" y="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="uc06" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232323;strokeColor=#8866ad;strokeWidth=2;arcSize=3;" value="" vertex="1">
+          <mxGeometry height="640" width="760" x="870" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="uc06_hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#3a2b4d;strokeColor=#8866ad;fontColor=#ffffff;fontSize=20;fontStyle=1;align=center;valign=middle;" value="UC-06: Update / Retrain GNN Model" vertex="1">
+          <mxGeometry height="50" width="760" x="870" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="uc06_body" parent="1" style="text;html=1;align=left;valign=top;fontSize=16;fontColor=#eaeaea;spacing=10;whiteSpace=wrap;overflow=hidden;lineHeight=1.35;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;Primary Actor:&lt;/b&gt; System Administrator&lt;br&gt;&lt;br&gt;&lt;b&gt;Goal:&lt;/b&gt; Update or retrain the GNN model with new data.&lt;br&gt;&lt;br&gt;&lt;b&gt;Precondition:&lt;/b&gt; New transaction data or labelled data is available.&lt;br&gt;&lt;br&gt;&lt;b&gt;Trigger:&lt;/b&gt; Administrator initiates model update/retraining.&lt;br&gt;&lt;br&gt;&lt;b&gt;Main Flow:&lt;/b&gt; 1. Select training data and configuration. 2. Train/retrain GNN model. 3. Validate model performance. 4. Deploy updated model to the system.&lt;br&gt;&lt;br&gt;&lt;b&gt;Alternative Flow:&lt;/b&gt; If validation performance is not satisfactory, retain the existing model.&lt;br&gt;&lt;br&gt;&lt;b&gt;Postcondition:&lt;/b&gt; Updated model is deployed for detection.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="568" width="728" x="886" y="1550" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
